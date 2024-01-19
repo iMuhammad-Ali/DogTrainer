@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Dog Trainer</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="shortcut icon" type="svg" href="assets/img/logo/dog-training.svg" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/animated-headline.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <svg fill="#6f42c1" height="64px" width="64px" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="-92.16 -92.16 696.32 696.32" xml:space="preserve" stroke="#007bff"
+                        stroke-width="0.0051199900000000005">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <g>
+                                    <circle cx="123.145" cy="56.493" r="42.187"></circle>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path
+                                        d="M293.461,96.778c-7.169-8.421-20.056-9.653-28.693-2.302c-9.192,7.826-47.957,40.829-53.613,45.645l-74.424-21.319 l31.199,0.743c-5.109-5.004-12.09-8.107-19.806-8.141l-40.305-0.165c-5.104-0.021-10.154,1.049-14.811,3.137l-80.976,36.316 c-9.478,4.25-14.236,14.952-11.042,24.835l28.913,89.462c3.457,10.697,14.93,16.567,25.629,13.109 c10.697-3.458,16.567-14.931,13.109-25.629l-23.301-72.094l34.711-15.562c0.912,123.091,0.972,110.643,0.522,113.458 l-13.944,87.254l-39.991,98.552c-5.072,12.5,0.949,26.746,13.45,31.818c12.503,5.073,26.746-0.951,31.818-13.45l41.037-101.132 c0.695-1.714,1.194-3.502,1.486-5.329l13.183-82.485l21.446,83.443l2.019,96.829c0.28,13.454,11.401,24.189,24.931,23.912 c13.487-0.281,24.193-11.442,23.911-24.931l-2.078-99.659c-0.039-1.88-0.295-3.749-0.764-5.571l-21.174-82.383l0.398-98.347 l-47.863-27.82l80.732,24.322c0.006,0.002,0.012,0.002,0.018,0.004c6.69,1.908,13.75,0.212,18.784-4.074l63.184-53.751 C299.713,118.187,300.75,105.339,293.461,96.778z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path
+                                        d="M511.683,251.085c-0.712-1.505-2.542-2.441-4.567-1.483c-3.024,1.43-6.139,2.579-9.144,3.457 c-5.648,1.707-13.459,3.089-20.872,2.524c-7.191-0.418-13.212-2.604-18.53-5.681c-0.768-4.271-2.517-8.349-5.177-11.885 L408.4,178.227c0,0,0.96-6.683,2.004-14.226c-9.814,1.506-22.254,1.848-26.577-7.047c-4.449-9.154,4.453-18.649,7.378-21.769 c2.387-2.547,5.62-5.531,8.487-7.764l-0.188-0.113c-7.037-4.271-15.868-4.265-22.898,0.017l-10.343-2.415 c-1.882-0.439-3.863-0.048-5.435,1.077c-1.572,1.124-2.584,2.87-2.777,4.794l-0.858,8.554c-0.7,6.98,3.255,13.594,9.737,16.28 c2.79,1.156,4.974,3.424,6.039,6.251c1.065,2.826,0.914,5.966-0.417,8.677c-4.155,8.459-9.897,20.635-13.859,30.999 l-44.171-25.848c-4.326-2.532-9.885-1.077-12.416,3.249c-2.532,4.326-1.077,9.885,3.249,12.416l48.939,28.639l-0.076,0.109 c3.585,3.104,27.319,21.523,49.052,38.064c2.162-5.105,5.387-10.011,9.654-14.335c1.891-1.917,4.977-1.937,6.893-0.046 c1.916,1.891,1.937,4.977,0.046,6.893c-4.587,4.648-7.735,10.718-9.477,16.988c-2.685,9.666-3.492,24.147-0.881,34.833 l-10.309,27.878c-45.116,1.263-81.308,38.205-81.308,83.626c0,46.219,37.468,83.686,83.686,83.686s83.686-37.468,83.686-83.686 c0-40.606-28.923-74.446-67.289-82.07l8.747-23.656c8.953-6.136,18.753-14.432,24.283-22.649 c2.724-4.046,6.901-13.602,7.375-18.565c6.716,1.494,13.058,1.796,19.114,1.06c6.825-0.683,15.364-3.056,23.629-7.234 c3.14-1.572,6.393-3.486,9.509-5.732C511.896,254.255,512.373,252.545,511.683,251.085z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path
+                                        d="M419.047,139.836c-2.785-5.728-8.306-8.79-11.254-7.357c-2.946,1.432-18.859,14.909-16.075,20.64 c2.785,5.729,23.213,1.545,26.161,0.112C420.825,151.799,421.832,145.566,419.047,139.836z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-area header-transparent">
+            <div class="main-header">
+                <div class="header-bottom header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center justify-content-between">
+                            <a class="header-logo" href="index.html" class="col-xl-3 col-lg-3 d-flex">
+                                <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 511.999 511.999" xml:space="preserve" stroke="#ffffff">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <g>
+                                                <circle cx="123.145" cy="56.493" r="42.187"></circle>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M293.461,96.778c-7.169-8.421-20.056-9.653-28.693-2.302c-9.192,7.826-47.957,40.829-53.613,45.645l-74.424-21.319 l31.199,0.743c-5.109-5.004-12.09-8.107-19.806-8.141l-40.305-0.165c-5.104-0.021-10.154,1.049-14.811,3.137l-80.976,36.316 c-9.478,4.25-14.236,14.952-11.042,24.835l28.913,89.462c3.457,10.697,14.93,16.567,25.629,13.109 c10.697-3.458,16.567-14.931,13.109-25.629l-23.301-72.094l34.711-15.562c0.912,123.091,0.972,110.643,0.522,113.458 l-13.944,87.254l-39.991,98.552c-5.072,12.5,0.949,26.746,13.45,31.818c12.503,5.073,26.746-0.951,31.818-13.45l41.037-101.132 c0.695-1.714,1.194-3.502,1.486-5.329l13.183-82.485l21.446,83.443l2.019,96.829c0.28,13.454,11.401,24.189,24.931,23.912 c13.487-0.281,24.193-11.442,23.911-24.931l-2.078-99.659c-0.039-1.88-0.295-3.749-0.764-5.571l-21.174-82.383l0.398-98.347 l-47.863-27.82l80.732,24.322c0.006,0.002,0.012,0.002,0.018,0.004c6.69,1.908,13.75,0.212,18.784-4.074l63.184-53.751 C299.713,118.187,300.75,105.339,293.461,96.778z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M511.683,251.085c-0.712-1.505-2.542-2.441-4.567-1.483c-3.024,1.43-6.139,2.579-9.144,3.457 c-5.648,1.707-13.459,3.089-20.872,2.524c-7.191-0.418-13.212-2.604-18.53-5.681c-0.768-4.271-2.517-8.349-5.177-11.885 L408.4,178.227c0,0,0.96-6.683,2.004-14.226c-9.814,1.506-22.254,1.848-26.577-7.047c-4.449-9.154,4.453-18.649,7.378-21.769 c2.387-2.547,5.62-5.531,8.487-7.764l-0.188-0.113c-7.037-4.271-15.868-4.265-22.898,0.017l-10.343-2.415 c-1.882-0.439-3.863-0.048-5.435,1.077c-1.572,1.124-2.584,2.87-2.777,4.794l-0.858,8.554c-0.7,6.98,3.255,13.594,9.737,16.28 c2.79,1.156,4.974,3.424,6.039,6.251c1.065,2.826,0.914,5.966-0.417,8.677c-4.155,8.459-9.897,20.635-13.859,30.999 l-44.171-25.848c-4.326-2.532-9.885-1.077-12.416,3.249c-2.532,4.326-1.077,9.885,3.249,12.416l48.939,28.639l-0.076,0.109 c3.585,3.104,27.319,21.523,49.052,38.064c2.162-5.105,5.387-10.011,9.654-14.335c1.891-1.917,4.977-1.937,6.893-0.046 c1.916,1.891,1.937,4.977,0.046,6.893c-4.587,4.648-7.735,10.718-9.477,16.988c-2.685,9.666-3.492,24.147-0.881,34.833 l-10.309,27.878c-45.116,1.263-81.308,38.205-81.308,83.626c0,46.219,37.468,83.686,83.686,83.686s83.686-37.468,83.686-83.686 c0-40.606-28.923-74.446-67.289-82.07l8.747-23.656c8.953-6.136,18.753-14.432,24.283-22.649 c2.724-4.046,6.901-13.602,7.375-18.565c6.716,1.494,13.058,1.796,19.114,1.06c6.825-0.683,15.364-3.056,23.629-7.234 c3.14-1.572,6.393-3.486,9.509-5.732C511.896,254.255,512.373,252.545,511.683,251.085z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M419.047,139.836c-2.785-5.728-8.306-8.79-11.254-7.357c-2.946,1.432-18.859,14.909-16.075,20.64 c2.785,5.729,23.213,1.545,26.161,0.112C420.825,151.799,421.832,145.566,419.047,139.836z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <h1>Dog Trainer</h1>
+                            </a>
+                            <div class="col-xl-9 col-lg-9">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li class="active"><a href="index.html">Home</a></li>
+                                                <li><a href="">Trainings</a></li>
+                                                <li><a href="">Games</a></li>
+                                                <li><a href="">Progress Tracker</a></li>
+                                                <li><a href="">Community</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="slider-area">
+            <div class="slider-active">
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-7 col-md-12">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s">
+                                        Virtual Dog<br />Training program
+                                    </h1>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s">
+                                        Where innovative techniques meet interactive sessions for
+                                        a well-behaved and happy canine companion.
+                                    </p>
+                                    <a href="#" class="btn hero-btn" data-animation="fadeInLeft"
+                                        data-delay="0.7s">Explore Trainings</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="services-area">
+            <div class="container">
+                <div class="row justify-content-sm-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon1.svg" alt="" />
+                            </div>
+                            <div class="features-caption">
+                                <h3>30+ Training courses</h3>
+                                <p>Enrich your dog's skills through our 30+ courses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon2.svg" alt="" />
+                            </div>
+                            <div class="features-caption">
+                                <h3>Expert instructor</h3>
+                                <p>Unlock your dog's full potential guided by experts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon3.svg" alt="" />
+                            </div>
+                            <div class="features-caption">
+                                <h3>Life time access</h3>
+                                <p>Enduring training success with your dog for lifetime.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="courses-area section-padding40 fix">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-tittle text-center mb-55">
+                            <h2>Our Featured Trainings</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-actives">
+                    <div class="properties pb-20">
+                        <div class="properties__card">
+                            <div class="properties__img overlay1">
+                                <a href="#"><img src="assets/img/gallery/feature1.jpg" alt="" /></a>
+                            </div>
+                            <div class="properties__caption">
+                                <h3><a href="#">Basic Obedience Training</a></h3>
+                                <p>
+                                    Master fundamental commands like sit, stay, and come in our
+                                    Basic Obedience Training. Lay the groundwork for clear
+                                    communication and a well-behaved canine companion. Start
+                                    your path to a harmonious bond today.
+                                </p>
+                                <div class="properties__footer d-flex justify-content-between align-items-center">
+                                    <div class="restaurant-name">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p><span>(5)</span> based on 120</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="properties pb-20">
+                        <div class="properties__card">
+                            <div class="properties__img overlay1">
+                                <a href="#"><img src="assets/img/gallery/feature2.jpg" alt="" /></a>
+                            </div>
+                            <div class="properties__caption">
+                                <h3><a href="#">Advanced Obedience Training</a></h3>
+                                <p>
+                                    Elevate your dog's skills with our Advanced Obedience
+                                    Training. Perfect commands like heel, fetch, and speak.
+                                    Deepen the bond for an obedient and impressive canine
+                                    companion. Take your training to the next level.
+                                </p>
+                                <div class="properties__footer d-flex justify-content-between align-items-center">
+                                    <div class="restaurant-name">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p><span>(5)</span> based on 241</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="properties pb-20">
+                        <div class="properties__card">
+                            <div class="properties__img overlay1">
+                                <a href="#"><img src="assets/img/gallery/feature4.jpg" alt="" /></a>
+                            </div>
+                            <div class="properties__caption">
+                                <h3><a href="#">Agility Training</a></h3>
+                                <p>
+                                    Nurture your dog's physical and mental prowess as they
+                                    conquer jumps, tunnels, and weave poles. Enhance their
+                                    coordination, confidence, and overall athleticism. Join us
+                                    for an exhilarating journey of agility and fun!
+                                </p>
+                                <div class="properties__footer d-flex justify-content-between align-items-center">
+                                    <div class="restaurant-name">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p><span>(5)</span> based on 177</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="properties pb-20">
+                        <div class="properties__card">
+                            <div class="properties__img overlay1">
+                                <a href="#"><img src="assets/img/gallery/feature3.jpg" alt="" /></a>
+                            </div>
+                            <div class="properties__caption">
+                                <h3><a href="#">Tricks Training</a></h3>
+                                <p>
+                                    Turn ordinary moments into extraordinary ones as your dog
+                                    learns playful and impressive tricks. From high-fives to
+                                    rollovers, join us in creating memorable experiences and
+                                    showcasing your dog's talents.
+                                </p>
+                                <div class="properties__footer d-flex justify-content-between align-items-center">
+                                    <div class="restaurant-name">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p><span>(5)</span> based on 97</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="properties pb-20">
+                        <div class="properties__card">
+                            <div class="properties__img overlay1">
+                                <a href="#"><img src="assets/img/gallery/feature5.jpg" alt="" /></a>
+                            </div>
+                            <div class="properties__caption">
+                                <h3><a href="#">Scent Detection Training</a></h3>
+                                <p>
+                                    Hone your dog's natural abilities to sniff out specific
+                                    scents, turning their nose into a powerful tool. Join us in
+                                    an engaging and rewarding journey where your dog becomes a
+                                    skilled scent detective. Unleash their potential today!
+                                </p>
+                                <div class="properties__footer d-flex justify-content-between align-items-center">
+                                    <div class="restaurant-name">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p><span>(5)</span> based on 205</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="border-btn border-btn2">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="about-area1 fix pt-10">
+            <div class="support-wrapper align-items-center">
+                <div class="left-content1">
+                    <div class="about-icon">
+                        <svg fill="#ffffff" height="32px" width="32px" version="1.1" id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 415.507 415.507" xml:space="preserve" stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <path
+                                        d="M411.376,236.46c-0.016-0.245-0.045-0.488-0.09-0.73c0,0-11.292-60.716-11.355-60.926c-0.179-0.777-0.515-1.533-1.02-2.216 l-48.459-65.587c-4.673-6.124-11.333-7.751-17.727-7.751h-45.277c-4.866,0-10.498,1.553-14.188,4.183c-0.041,0.025,0.04-0.026,0,0 l-66.194,43.397l-15.765-20.76c-3.171-5.157-8.855-8.345-14.934-8.345c-3.093,0-6.145,0.828-8.827,2.395 c-8.338,4.874-11.161,15.625-6.295,23.966c0.128,0.218,0.27,0.429,0.423,0.629l27.049,35.237c3.238,4.778,8.612,7.673,14.495,7.673 c2.743,0,5.491-0.661,7.947-1.913c0.181-0.092-0.17,0.109,0,0l53.72-34.601v245.383c0,10.483,8.527,19.012,19.01,19.012 c10.485,0,19.016-8.528,19.016-19.012v-126.38l14.365,0.001v126.379c0,10.483,8.527,19.012,19.01,19.012 c10.485,0,19.016-8.528,19.016-19.012V172.531l11.754,15.906l9.37,50.552c0.758,9.036,8.345,16.056,17.449,16.056 c0.355,0,0.715-0.011,1.072-0.032c4.671-0.282,8.953-2.367,12.058-5.87C410.106,245.638,411.66,241.133,411.376,236.46z">
+                                    </path>
+                                    <path
+                                        d="M18.549,28.9c7.968,0,14.449-6.482,14.449-14.45C32.998,6.483,26.517,0,18.549,0C10.58,0,4.098,6.483,4.098,14.45 C4.098,22.418,10.58,28.9,18.549,28.9z">
+                                    </path>
+                                    <path
+                                        d="M222.418,334.215c-1.062-1.273-2.603-2.05-4.257-2.147l-21.34-1.243c-4.156-10.649-9.812-17.755-15.841-22.472 c12.9-1.362,25.043-7.427,33.859-17.216c2.218-2.463,2.02-6.256-0.442-8.474c-2.463-2.218-6.256-2.021-8.474,0.442 c-8.767,9.734-21.778,14.705-34.847,13.309l-92.596-12.717l-1.75-5.689l13.72-39.084c0.815-2.324,0.129-4.91-1.732-6.522 c-1.862-1.612-4.521-1.923-6.703-0.785l-8.53,4.449l0.421-5.58c0.179-2.379-1.068-4.639-3.177-5.754 c-2.108-1.118-4.679-0.878-6.545,0.609l-9.378,7.47c-2.79-1.559-5.963-2.407-9.199-2.407c-3.397,0-6.674,0.903-9.541,2.594 l-19.604-8.949c-2.618-1.192-5.709-0.366-7.377,1.974c-0.695,0.975-1.062,2.099-1.11,3.229 c-6.137,19.273,2.295,38.608,20.131,46.776l12.118,62.351L24.84,352.15c-0.667,0.598-1.192,1.337-1.537,2.164L6.111,395.599 c-0.77,1.852-0.565,3.967,0.547,5.636c1.113,1.669,2.986,2.671,4.992,2.671h6.389c2.199,0,4.223-1.203,5.272-3.137l16.233-29.889 l10.387-8.097l6.815,28.814c0.385,1.628,1.433,3.022,2.89,3.845l32.051,18.091c0.927,0.522,1.941,0.774,2.946,0.774 c1.742,0,3.455-0.758,4.629-2.179l3.125-3.783c2.1-2.542,1.755-6.303-0.772-8.42l-26.194-21.95l-3.183-19.669 c16.813-2.292,38.221-6.639,53.714-9.998c2.202,5.506,8.202,11.756,12.951,14.177l41.19,20.881l-0.098,24.014 c-0.007,1.73,0.733,3.38,2.032,4.525c1.103,0.972,2.516,1.499,3.968,1.499c0.258,0,0.517-0.017,0.775-0.051l7.773-1.014 c2.883-0.376,5.082-2.764,5.218-5.668l1.559-33.222c0.083-1.764-0.615-3.474-1.908-4.676l-12.416-11.541l26.501-5.656 l15.977,18.489c1.183,1.368,2.855,2.077,4.543,2.077c1.271,0,2.549-0.401,3.632-1.226l4.422-3.366 c1.303-0.992,2.144-2.474,2.327-4.102c0.184-1.628-0.306-3.26-1.355-4.517L222.418,334.215z">
+                                    </path>
+                                    <path
+                                        d="M308.683,91.127c24.788,0,44.954-20.166,44.954-44.954S333.471,1.219,308.683,1.219c-24.788,0-44.954,20.166-44.954,44.954 S283.895,91.127,308.683,91.127z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="section-tittle section-tittle2 mb-30">
+                        <div class="front-text">
+                            <h2 class="">Learn new dog skills with our top instructor</h2>
+                            <p>
+                                Discover a wealth of new dog skills alongside our leading dog
+                                trainer, fostering a stronger connection and a well-rounded,
+                                joyful relationship with your furry friend.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="" />
+                        </div>
+                        <div class="features-caption">
+                            <p>
+                                Delight in playful antics as your dog learns fun tricks like
+                                rolling over and playing dead.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="" />
+                        </div>
+                        <div class="features-caption">
+                            <p>
+                                Engage your dog's natural instincts by teaching them to search
+                                for and retrieve their favorite toy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="" />
+                        </div>
+                        <div class="features-caption">
+                            <p>
+                                Elevate your dog's agility with jumping and weaving skills,
+                                promoting physical and mental stimulation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content1 well-rounded">
+                    <div class="right-img">
+                        <img src="assets/img/gallery/nate scheoemer.jpg" alt="" />
+                        <div class="video-icon">
+                            <a class="popup-video btn-icon" href="#"><i
+                                    class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="topic-area section-padding40">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-tittle text-center mb-55">
+                            <h2>Explore top trainings</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="assets/img/top/sit.jpg" alt="" />
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Sit</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="assets/img/top/fetch.jpg" alt="" />
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Fetch</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="assets/img/top/lay down.jpg" alt="" />
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Lay Down</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="assets/img/top/come on call.jpg" alt="" />
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Come on call</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="assets/img/top/get to bed.jpg" alt="" />
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Get to bed</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="assets/img/top/alert.jpg" alt="" />
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Alert</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="assets/img/top/stay.jpg" alt="" />
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Stay</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src="assets/img/top/vehicle.jpg" alt="" />
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href="#">Go into vehicle</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-12">
+                        <div class="section-tittle text-center mt-20">
+                            <a href="" class="border-btn">View More Trainings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="about-area3 fix">
+            <div class="support-wrapper align-items-center">
+                <div class="right-content3">
+                    <div class="right-img">
+                        <img src="assets/img/gallery/about3.2.png" alt="" />
+                    </div>
+                </div>
+                <div class="left-content3">
+                    <div class="section-tittle section-tittle2 mb-20">
+                        <div class="front-text">
+                            <h2 class="">Learner outcomes on training sessions</h2>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="" />
+                        </div>
+                        <div class="features-caption">
+                            <p>
+                                Acquire skills to confidently manage and train your dog
+                                effectively in diverse situations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="" />
+                        </div>
+                        <div class="features-caption">
+                            <p>
+                                Establish reliable recall and control, ensuring the safety of
+                                your dog in various environments.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="" />
+                        </div>
+                        <div class="features-caption">
+                            <p>
+                                Learn entertaining tricks and games, adding an element of joy
+                                and playfulness to your relationship with your dog.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-area section-padding40 fix">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-tittle text-center mb-55">
+                            <h2>Community experts</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-active">
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team1.png" alt="" />
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="">Jame Smith</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team2.png" alt="" />
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="">Ava Elizabeth</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team3.png" alt="" />
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="">Nathan Henry</a></h5>
+                        </div>
+                    </div>
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/team4.png" alt="" />
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="">Aurora Lynn</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-area2 fix pb-padding">
+            <div class="support-wrapper align-items-center">
+                <div class="right-content2">
+                    <div class="right-img">
+                        <img src="assets/img/gallery/about2.3.avif" alt="" />
+                    </div>
+                </div>
+                <div class="left-content2">
+                    <div class="section-tittle section-tittle2 mb-20">
+                        <div class="front-text">
+                            <h2>Achieve personal growth in canine companionship</h2>
+                            <p>
+                                Embark on a transformative personal growth journey through our
+                                tailored training sessions in canine companionship.
+                            </p>
+                            <a href="#" class="btn">Start now for Free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-wrappper footer-bg">
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-5 col-lg-5 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="single-footer-caption mb-30">
+                                    <div class="footer-logo header-logo mb-25 d-flex">
+                                        <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999"
+                                            xml:space="preserve" stroke="#ffffff">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <g>
+                                                    <g>
+                                                        <circle cx="123.145" cy="56.493" r="42.187"></circle>
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M293.461,96.778c-7.169-8.421-20.056-9.653-28.693-2.302c-9.192,7.826-47.957,40.829-53.613,45.645l-74.424-21.319 l31.199,0.743c-5.109-5.004-12.09-8.107-19.806-8.141l-40.305-0.165c-5.104-0.021-10.154,1.049-14.811,3.137l-80.976,36.316 c-9.478,4.25-14.236,14.952-11.042,24.835l28.913,89.462c3.457,10.697,14.93,16.567,25.629,13.109 c10.697-3.458,16.567-14.931,13.109-25.629l-23.301-72.094l34.711-15.562c0.912,123.091,0.972,110.643,0.522,113.458 l-13.944,87.254l-39.991,98.552c-5.072,12.5,0.949,26.746,13.45,31.818c12.503,5.073,26.746-0.951,31.818-13.45l41.037-101.132 c0.695-1.714,1.194-3.502,1.486-5.329l13.183-82.485l21.446,83.443l2.019,96.829c0.28,13.454,11.401,24.189,24.931,23.912 c13.487-0.281,24.193-11.442,23.911-24.931l-2.078-99.659c-0.039-1.88-0.295-3.749-0.764-5.571l-21.174-82.383l0.398-98.347 l-47.863-27.82l80.732,24.322c0.006,0.002,0.012,0.002,0.018,0.004c6.69,1.908,13.75,0.212,18.784-4.074l63.184-53.751 C299.713,118.187,300.75,105.339,293.461,96.778z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M511.683,251.085c-0.712-1.505-2.542-2.441-4.567-1.483c-3.024,1.43-6.139,2.579-9.144,3.457 c-5.648,1.707-13.459,3.089-20.872,2.524c-7.191-0.418-13.212-2.604-18.53-5.681c-0.768-4.271-2.517-8.349-5.177-11.885 L408.4,178.227c0,0,0.96-6.683,2.004-14.226c-9.814,1.506-22.254,1.848-26.577-7.047c-4.449-9.154,4.453-18.649,7.378-21.769 c2.387-2.547,5.62-5.531,8.487-7.764l-0.188-0.113c-7.037-4.271-15.868-4.265-22.898,0.017l-10.343-2.415 c-1.882-0.439-3.863-0.048-5.435,1.077c-1.572,1.124-2.584,2.87-2.777,4.794l-0.858,8.554c-0.7,6.98,3.255,13.594,9.737,16.28 c2.79,1.156,4.974,3.424,6.039,6.251c1.065,2.826,0.914,5.966-0.417,8.677c-4.155,8.459-9.897,20.635-13.859,30.999 l-44.171-25.848c-4.326-2.532-9.885-1.077-12.416,3.249c-2.532,4.326-1.077,9.885,3.249,12.416l48.939,28.639l-0.076,0.109 c3.585,3.104,27.319,21.523,49.052,38.064c2.162-5.105,5.387-10.011,9.654-14.335c1.891-1.917,4.977-1.937,6.893-0.046 c1.916,1.891,1.937,4.977,0.046,6.893c-4.587,4.648-7.735,10.718-9.477,16.988c-2.685,9.666-3.492,24.147-0.881,34.833 l-10.309,27.878c-45.116,1.263-81.308,38.205-81.308,83.626c0,46.219,37.468,83.686,83.686,83.686s83.686-37.468,83.686-83.686 c0-40.606-28.923-74.446-67.289-82.07l8.747-23.656c8.953-6.136,18.753-14.432,24.283-22.649 c2.724-4.046,6.901-13.602,7.375-18.565c6.716,1.494,13.058,1.796,19.114,1.06c6.825-0.683,15.364-3.056,23.629-7.234 c3.14-1.572,6.393-3.486,9.509-5.732C511.896,254.255,512.373,252.545,511.683,251.085z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M419.047,139.836c-2.785-5.728-8.306-8.79-11.254-7.357c-2.946,1.432-18.859,14.909-16.075,20.64 c2.785,5.729,23.213,1.545,26.161,0.112C420.825,151.799,421.832,145.566,419.047,139.836z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <h1>Dog Trainer</h1>
+                                    </div>
+                                    <div class="footer-tittle">
+                                        <div class="footer-pera">
+                                            <p>
+                                                Transforming Paws, Empowering Bonds: Your Expert
+                                                Companion in Dog Training.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="footer-social">
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Pages</h4>
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Trainings</a></li>
+                                        <li><a href="#">Progress Tracker</a></li>
+                                        <li><a href="#">Training Games</a></li>
+                                        <li><a href="#">Health & Nutrition</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Our Trainings</h4>
+                                    <ul>
+                                        <li><a href="#">Basic Obedience Training</a></li>
+                                        <li><a href="#">Advanced Obedience Training</a></li>
+                                        <li><a href="#">Tricks Training</a></li>
+                                        <li><a href="#">Agility Training</a></li>
+                                        <li><a href="#">Scent Detection Training</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-xl-12">
+                                <div class="footer-copy-right text-center">
+                                    <p>
+                                        All rights reserved &copy; Dog Trainer,
+                                        <script>
+                                            document.write(new Date().getFullYear());
+                                        </script>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="back-top">
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="./assets/js/jquery.barfiller.js"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
